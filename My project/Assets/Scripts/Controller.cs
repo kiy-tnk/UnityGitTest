@@ -14,5 +14,6 @@ public class Controller : MonoBehaviour
     void Update()
     {
         this.transform.position += transform.forward * Input.GetAxis("Vertical") * 0.1f;
+        this.transform.position += transform.right * Input.GetAxis("Horizontal") * 0.1f;
     }
 }
